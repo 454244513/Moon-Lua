@@ -16,4 +16,12 @@ return {
 	["blatant"] = "暴力",
 	["legit"] = "合法",
 	["auto say"] = "自动发言",
+    ["aimbot"] = "自瞄",
+    ["fly"] = "飞行",
+    ["universal"] = "通用",
+    ["mode for aimbot"] = "自瞄模式",
+    ["visual"] = "视觉",
+    ["forcefield check"] = "忽略无敌",
+    ["blade weapon"] = "飞镖武器",
+    ["gun weapon"] = "枪械武器",
 }
