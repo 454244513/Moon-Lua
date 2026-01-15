@@ -23,44 +23,32 @@ local function newDrawing(class)
 	return obj
 end
 
-local function getCharacterParts(char)
-	local parts = {}
-	for _, v in ipairs(char:GetChildren()) do
-		if v:IsA("BasePart") then
-			table.insert(parts, v)
-		end
-	end
-	return parts
-end
-
-local function getBoundingBox(parts)
-	local minX, minY, maxX, maxY
-	local anyOnScreen = false
-	for _, part in ipairs(parts) do
-		local pos, onScreen = camera:WorldToViewportPoint(part.Position)
-		if onScreen and pos.Z > 0 then
-			anyOnScreen = true
-			if not minX then
-				minX, minY, maxX, maxY = pos.X, pos.Y, pos.X, pos.Y
-			else
-				if pos.X < minX then
-					minX = pos.X
-				end
-				if pos.X > maxX then
-					maxX = pos.X
-				end
-				if pos.Y < minY then
-					minY = pos.Y
-				end
-				if pos.Y > maxY then
-					maxY = pos.Y
-				end
-			end
-		end
-	end
-	if not anyOnScreen or not minX then
+local function getFixedBox(char)
+	local root = char:FindFirstChild("HumanoidRootPart")
+	local head = char:FindFirstChild("Head")
+	if not root or not head then
 		return nil
 	end
+
+	local rootPos, rootOnScreen = camera:WorldToViewportPoint(root.Position)
+	local headPos, headOnScreen = camera:WorldToViewportPoint(head.Position)
+	if not rootOnScreen or not headOnScreen or rootPos.Z <= 0 or headPos.Z <= 0 then
+		return nil
+	end
+
+	local height = math.abs(headPos.Y - rootPos.Y)
+	if height <= 0 then
+		return nil
+	end
+
+	local width = height * 0.5
+	local centerX = rootPos.X
+
+	local minX = centerX - width / 2
+	local maxX = centerX + width / 2
+	local minY = headPos.Y - 4
+	local maxY = minY + height
+
 	return minX, minY, maxX, maxY
 end
 
@@ -154,8 +142,7 @@ local function updateObject(entry, dt)
 		return
 	end
 
-	local parts = getCharacterParts(char)
-	local minX, minY, maxX, maxY = getBoundingBox(parts)
+	local minX, minY, maxX, maxY = getFixedBox(char)
 	if not minX then
 		for _, d in pairs(entry.Drawings) do
 			d.Visible = false
@@ -221,6 +208,26 @@ local function updateObject(entry, dt)
 	local flagTextValue = ""
 	if options.FlagFormatter and type(options.FlagFormatter) == "function" then
 		flagTextValue = options.FlagFormatter(player, char, hum) or ""
+	elseif options.FlagType == "Money" then
+		local value
+		local raw = options.FlagValue
+
+		if raw ~= nil then
+			if typeof(raw) == "Instance" then
+				local ok, v = pcall(function()
+					return raw.Value
+				end)
+				if ok and v ~= nil then
+					value = v
+				end
+			else
+				value = raw
+			end
+		end
+
+		if value ~= nil then
+			flagTextValue = "$" .. tostring(value)
+		end
 	elseif type(options.FlagText) == "string" then
 		flagTextValue = options.FlagText
 	end
