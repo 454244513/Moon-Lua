@@ -206,29 +206,7 @@ local function updateObject(entry, dt)
 	healthBar.Visible = true
 
 	local flagTextValue = ""
-	if options.FlagFormatter and type(options.FlagFormatter) == "function" then
-		flagTextValue = options.FlagFormatter(player, char, hum) or ""
-	elseif options.FlagType == "Money" then
-		local value
-		local raw = options.FlagValue
-
-		if raw ~= nil then
-			if typeof(raw) == "Instance" then
-				local ok, v = pcall(function()
-					return raw.Value
-				end)
-				if ok and v ~= nil then
-					value = v
-				end
-			else
-				value = raw
-			end
-		end
-
-		if value ~= nil then
-			flagTextValue = "$" .. tostring(value)
-		end
-	elseif type(options.FlagText) == "string" then
+	if type(options.FlagText) == "string" then
 		flagTextValue = options.FlagText
 	end
 
