@@ -25,18 +25,39 @@ end
 
 local function getFixedBox(char)
 	local root = char:FindFirstChild("HumanoidRootPart")
-	local head = char:FindFirstChild("Head")
-	if not root or not head then
+	if not root then
 		return nil
 	end
 
 	local rootPos, rootOnScreen = camera:WorldToViewportPoint(root.Position)
-	local headPos, headOnScreen = camera:WorldToViewportPoint(head.Position)
-	if not rootOnScreen or not headOnScreen or rootPos.Z <= 0 or headPos.Z <= 0 then
+	if not rootOnScreen or rootPos.Z <= 0 then
 		return nil
 	end
 
-	local height = math.abs(headPos.Y - rootPos.Y)
+	local minY = math.huge
+	local maxY = -math.huge
+	local any = false
+
+	for _, part in ipairs(char:GetChildren()) do
+		if part:IsA("BasePart") then
+			local pos, onScreen = camera:WorldToViewportPoint(part.Position)
+			if onScreen and pos.Z > 0 then
+				any = true
+				if pos.Y < minY then
+					minY = pos.Y
+				end
+				if pos.Y > maxY then
+					maxY = pos.Y
+				end
+			end
+		end
+	end
+
+	if not any then
+		return nil
+	end
+
+	local height = maxY - minY
 	if height <= 0 then
 		return nil
 	end
@@ -46,10 +67,10 @@ local function getFixedBox(char)
 
 	local minX = centerX - width / 2
 	local maxX = centerX + width / 2
-	local minY = headPos.Y - 4
-	local maxY = minY + height
+	local boxMinY = minY - 4
+	local boxMaxY = boxMinY + height
 
-	return minX, minY, maxX, maxY
+	return minX, boxMinY, maxX, boxMaxY
 end
 
 local function createForPlayer(player, options)
@@ -206,7 +227,9 @@ local function updateObject(entry, dt)
 	healthBar.Visible = true
 
 	local flagTextValue = ""
-	if type(options.FlagText) == "string" then
+	if options.FlagFormatter and type(options.FlagFormatter) == "function" then
+		flagTextValue = options.FlagFormatter(player, char, hum) or ""
+	elseif type(options.FlagText) == "string" then
 		flagTextValue = options.FlagText
 	end
 
