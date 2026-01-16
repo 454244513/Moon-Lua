@@ -24,4 +24,5 @@ return {
     ["forcefield check"] = "忽略无敌",
     ["blade weapon"] = "飞镖武器",
     ["gun weapon"] = "枪械武器",
+	["block spam"] = "自动格挡滥用",
 }
