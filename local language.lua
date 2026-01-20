@@ -25,4 +25,5 @@ return {
     ["blade weapon"] = "飞镖武器",
     ["gun weapon"] = "枪械武器",
 	["block spam"] = "自动格挡滥用",
+	["Back Track(s)"] = "回溯(秒)",
 }
