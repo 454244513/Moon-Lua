@@ -248,4 +248,7 @@ return {
 		14732610803,
 		15131065025,
 	},
+	["The Strongest Battlegrounds"] = {
+		10449761463, --main
+	},
 }
