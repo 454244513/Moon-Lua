@@ -1,6 +1,6 @@
 # Moon Lua Documentation
 
-## Table of Contents
+## Support Games
 - [Ultimate Battlegrounds](#ultimate-battlegrounds)
 - [Ohio](#ohio)
 - [Wanted](#wanted)
