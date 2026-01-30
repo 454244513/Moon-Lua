@@ -180,6 +180,7 @@
 - Join Server
 
 ### Misc
+- Fake Wallet
 - Fake Item
 - Anim
 - Anims
@@ -215,7 +216,9 @@
 
 ### Legit
 - Bypass AimAssist
-- assistSensitivity
+- AimAssist Sensitivity
+- Hitbox Expand
+- Hitbox Size
 
 ### Auto Farm
 - Mode
