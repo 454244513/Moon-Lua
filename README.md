@@ -1,5 +1,39 @@
 # Moon Lua Documentation
 
+## Table of Contents
+- [Ultimate Battlegrounds](#ultimate-battlegrounds)
+- [Ohio](#ohio)
+- [Wanted](#wanted)
+- [Guts Blackpowder](#guts-blackpowder)
+- [Gun Grounds FFA](#gun-grounds-ffa)
+- [Project Delta](#project-delta)
+- [Forge](#forge)
+- [Tuantus lobotomization branches](#tuantus-lobotomization-branches)
+- [Weird Gun Game](#weird-gun-game)
+- [99 Nights in the Forest](#99-nights-in-the-forest)
+- [Slasher Blade Loot](#slasher-blade-loot)
+- [Blackout](#blackout)
+- [Criminality](#criminality)
+- [War Tycoon](#war-tycoon)
+- [Slap Battles](#slap-battles)
+- [Boss Slayer](#boss-slayer)
+- [Violence District](#violence-district)
+- [Muscle Legends](#muscle-legends)
+- [Legends Of Speed](#legends-of-speed)
+- [Ninja Legends](#ninja-legends)
+- [Forsaken](#forsaken)
+- [FORTLINE-Lyle Games](#fortline-lyle-games)
+- [Prison Life](#prison-life)
+- [Dueling Grounds](#dueling-grounds)
+- [RIVALS](#rivals)
+- [Spear Fishing](#spear-fishing)
+- [Westbound](#westbound)
+- [CENTAURA](#centaura)
+- [Combat Warriors](#combat-warriors)
+- [Flick](#flick)
+- [Blade Ball](#blade-ball)
+- [The Strongest Battlegrounds](#the-strongest-battlegrounds)
+
 ## Ultimate Battlegrounds
 ### Data
 - Silent Block
