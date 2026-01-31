@@ -308,6 +308,8 @@
 - Save Aura
 - Auto Heal
 - Instant Kill
+- Hitbox Expand
+- Hitbox Size
 
 ### Talents
 - Talents
@@ -803,11 +805,15 @@
 ### Main
 - Fast Dash
 - Auto Wall Combo
+- Auto Block
+- Side Dash Helper
 
 ### Blatant
 - Trashcan Spam
+- Anti Death Counter
 - Auto Supa Tech
 - Auto Lethal Tech
+- No Freeze
 
 ### VISUAL
 - Dash Indicator
