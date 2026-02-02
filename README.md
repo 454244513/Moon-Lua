@@ -796,10 +796,11 @@
 - Ragebot
 
 ## Blade Ball
-### Blade Ball
+### Main
 - Auto Parry
 - Spam Parry Range
 - Auto Parry Color
+- Sword Changer
 
 ## The Strongest Battlegrounds
 ### Main
