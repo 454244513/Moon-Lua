@@ -33,6 +33,8 @@
 - [Flick](#flick)
 - [Blade Ball](#blade-ball)
 - [The Strongest Battlegrounds](#the-strongest-battlegrounds)
+- [He Ping Fan Dian](#he-ping-fan-dian)
+- [Notoriety A PAYDAY Experience](#notoriety-a-payday-experience)
 
 ## Ultimate Battlegrounds
 ### Data
@@ -816,5 +818,23 @@
 - Auto Lethal Tech
 - No Freeze
 
-### VISUAL
+### Visual
 - Dash Indicator
+
+## He Ping Fan Dian
+### Main
+- Spam Job
+- Gift Money
+
+## Notoriety A PAYDAY Experience
+### Main
+- Bring Police
+- Destroy Glass/Camera
+- Inf Stamina
+- Ammo Aura
+
+### Visual
+- ESP Item
+
+### Stats
+- Stats
