@@ -35,6 +35,7 @@
 - [The Strongest Battlegrounds](#the-strongest-battlegrounds)
 - [He Ping Fan Dian](#he-ping-fan-dian)
 - [Notoriety A PAYDAY Experience](#notoriety-a-payday-experience)
+- [CHAIN](#chain)
 
 ## Ultimate Battlegrounds
 ### Data
@@ -108,16 +109,9 @@
 
 ### Target
 - Auto Kill
-- Player List
-- Refresh
-- Options
 - Auto Counterattack
 - Random Target
 - Forcefield Check
-- Offset Invert
-- Offset X
-- Offset Y
-- Offset Z
 
 ### Blatant
 - Super Punch
@@ -178,7 +172,7 @@
 - Wall Material
 
 ### Server
-- Server
+- Join Player
 - Join Server
 
 ### Misc
@@ -832,9 +826,25 @@
 - Destroy Glass/Camera
 - Inf Stamina
 - Ammo Aura
+- Instant Reload
+- Damage Multi
 
 ### Visual
+- ESP Camera
 - ESP Item
 
-### Stats
-- Stats
+## CHAIN
+### Main
+- Unlock All Blueprint
+- Unlock Artifact Quest
+- Shop UI
+- Inf Stamina
+- Inf Clash Strength
+- Bypass BearTrapPlaced
+- CHAIN Hitbox Expand
+- Auto QTE
+- No Footstep
+
+### Visual
+- ESP CHAIN
+- ESP Item
