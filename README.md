@@ -36,6 +36,7 @@
 - [He Ping Fan Dian](#he-ping-fan-dian)
 - [Notoriety A PAYDAY Experience](#notoriety-a-payday-experience)
 - [CHAIN](#chain)
+- [Jump Showdown](#jump-showdown)
 
 ## Ultimate Battlegrounds
 ### Data
@@ -848,3 +849,20 @@
 ### Visual
 - ESP CHAIN
 - ESP Item
+
+## Jump Showdown
+### Main
+- Auto QTE
+- Fake Wall
+
+### Cooldown
+- M1 No CD
+- Front&Back Dash No CD
+- Side Dash No CD
+- Evasive No CD
+- Wall Combo No CD
+- MechDashLockout No CD
+
+### Auto Block
+- Auto Block
+- Auto Face
