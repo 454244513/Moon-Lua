@@ -37,6 +37,7 @@
 - [Notoriety A PAYDAY Experience](#notoriety-a-payday-experience)
 - [CHAIN](#chain)
 - [Jump Showdown](#jump-showdown)
+- [Abyss](#abyss)
 
 ## Ultimate Battlegrounds
 ### Data
@@ -815,6 +816,7 @@
 
 ### Visual
 - Dash Indicator
+- Tree Transparency
 
 ## He Ping Fan Dian
 ### Main
@@ -866,3 +868,14 @@
 ### Auto Block
 - Auto Block
 - Auto Face
+
+## Abyss
+### Main
+- Auto Catch
+- Auto Sell
+- Fish Hitbox Expand
+- ESP Fish
+- No Ragdoll
+
+### Buy
+- Buy any thing at anywhere
