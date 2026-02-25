@@ -64,6 +64,7 @@
 - Method
 - Circle
 - Color
+- Wallcombo Spam
 - Wallcombo Aura
 - Wallcombo Aura Multi
 - Crash Server
@@ -178,18 +179,22 @@
 - Join Server
 
 ### Misc
-- Fake Wallet
-- Fake Item
+
 - Anim
 - Anims
 - Message
 - Call/Msg Spam
 - Block Call/Msg Spam
+- PoliceUniform
+- Clown Hat
+
+### Client Side
+- Fake Wallet
 - Spawn Money Amount
 - Spawn Money
 - Unlock All Skins
-- PoliceUniform
-- Clown Hat
+- Fake Balloon
+- Get Item
 
 ### Setting
 - Auto Kill
