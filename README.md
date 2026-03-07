@@ -817,6 +817,8 @@
 - Anti Death Counter
 - Auto Supa Tech
 - Auto Lethal Tech
+- Auto Loop Dash
+- M1 Catch
 - No Freeze
 
 ### Visual
