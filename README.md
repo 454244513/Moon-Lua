@@ -809,6 +809,7 @@
 ### Main
 - Fast Dash
 - Auto Wall Combo
+- Auto Blocked M1
 - Auto Block
 - Side Dash Helper
 
