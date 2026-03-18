@@ -117,6 +117,7 @@
 - Forcefield Check
 
 ### Blatant
+- Head Hitbox Expand
 - Super Punch
 - Melee Aura
 - Break Vest
